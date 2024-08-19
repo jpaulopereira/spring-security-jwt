@@ -30,11 +30,11 @@ public class SpringRestSecurityJwtApplication {
             roleRepository.save(new RoleModel("ROLE_USER"));
 
             userService.save(new UserModel("Pedro", "pedro@gmail.com", "123456"));
-            userService.save(new UserModel("Joao Paulo", "joaopulo.ae@gmail.com", "123456"));
+            userService.save(new UserModel("Joao Paulo", "joaopaulo.ae@gmail.com", "123456"));
             userService.save(new UserModel("Ana", "ana@gmail.com", "123456"));
 
             userService.addRoleToUser("pedro@gmail.com", "ROLE_ADMIN");
-            userService.addRoleToUser("joaopulo.ae@gmail.com", "ROLE_MASTER");
+            userService.addRoleToUser("joaopaulo.ae@gmail.com", "ROLE_MASTER");
             userService.addRoleToUser("ana@gmail.com", "ROLE_USER");
         };
     }
